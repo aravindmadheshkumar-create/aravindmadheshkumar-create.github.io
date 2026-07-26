@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Aravind M — MBA | HR · Marketing · Sales</title>
-<meta name="description" content="Aravind M — MBA Graduate specialized in HR, Marketing & Sales. Building growth, teams and results." />
-<meta property="og:title" content="Aravind M | HR · Marketing · Sales Professional" />
+<title>Aravind M — MBA | HR · Marketing</title>
+<meta name="description" content="Aravind M — MBA Graduate specialized in HR & Marketing. Building growth, teams and results." />
+<meta property="og:title" content="Aravind M | HR · Marketing Professional" />
 <meta property="og:description" content="MBA Graduate. Strategic. Data-Driven. Results-Oriented." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -349,11 +349,10 @@ nav.scrolled {
   margin: 0 6px;
 }
 @keyframes rotateWords {
-  0%, 20% { transform: translateY(0); }
-  25%, 45% { transform: translateY(-52px); }
-  50%, 70% { transform: translateY(-104px); }
-  75%, 95% { transform: translateY(-156px); }
-  100% { transform: translateY(-208px); }
+  0%, 22% { transform: translateY(0); }
+  33%, 55% { transform: translateY(-52px); }
+  67%, 89% { transform: translateY(-104px); }
+  100% { transform: translateY(-156px); }
 }
 .hero-desc {
   font-size: 17px;
@@ -1081,6 +1080,91 @@ section {
   letter-spacing: 0.06em;
 }
 
+/* PROJECTS */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 60px;
+}
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: transform .3s cubic-bezier(.2,.8,.2,1), box-shadow .3s, border-color .3s;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.45);
+  border-color: rgba(201,168,76,0.25);
+}
+.project-icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(201,168,76,0.15), rgba(201,168,76,0.05));
+  border: 1px solid rgba(201,168,76,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.project-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  margin-bottom: 10px;
+}
+.project-desc {
+  font-size: 14px;
+  color: var(--text2);
+  line-height: 1.6;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+.project-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.project-stat {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--gold2);
+  background: rgba(201,168,76,0.08);
+  border: 1px solid rgba(201,168,76,0.18);
+  border-radius: 100px;
+  padding: 5px 12px;
+}
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  text-decoration: none;
+  padding: 12px 22px;
+  border: 1px solid var(--border2);
+  border-radius: 100px;
+  transition: transform .25s, border-color .25s, background .25s;
+  align-self: flex-start;
+}
+.project-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(201,168,76,0.4);
+  background: rgba(201,168,76,0.08);
+}
+
 /* ============================================================
    WHY HIRE ME
    ============================================================ */
@@ -1401,6 +1485,7 @@ footer {
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" onclick="closeMobileMenu()">About</a>
   <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+  <a href="#projects" onclick="closeMobileMenu()">Projects</a>
   <a href="#skills" onclick="closeMobileMenu()">Skills</a>
   <a href="#leadership" onclick="closeMobileMenu()">Leadership</a>
   <a href="#education" onclick="closeMobileMenu()">Education</a>
@@ -1413,6 +1498,7 @@ footer {
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#leadership">Leadership</a></li>
     <li><a href="#education">Education</a></li>
@@ -1447,7 +1533,6 @@ footer {
         <span><em>▸</em> MBA Graduate &amp; People Strategist</span>
         <span><em>▸</em> HR Specialist &amp; Talent Partner</span>
         <span><em>▸</em> Marketing Strategist &amp; Brand Builder</span>
-        <span><em>▸</em> Sales Professional &amp; Growth Driver</span>
         <span><em>▸</em> MBA Graduate &amp; People Strategist</span>
       </div>
     </div>
@@ -1500,7 +1585,7 @@ footer {
         <div class="about-card-main">
           <div class="about-initials">AM</div>
           <div class="about-card-name">Aravind M</div>
-          <div class="about-card-role">HR · Marketing · Sales</div>
+          <div class="about-card-role">HR · Marketing</div>
           <div class="about-mini-stats">
             <div class="about-mini-stat">
               <div class="val">MBA</div>
@@ -1515,7 +1600,7 @@ footer {
         <div class="about-float-badge">
           <span class="icon">📍</span>
           <span class="text">
-            <strong>Chennai, India</strong>
+            <strong>Hyderabad, India</strong>
             Open to Relocation
           </span>
         </div>
@@ -1620,6 +1705,49 @@ footer {
 </section>
 
 <!-- ============================================================
+     PROJECTS
+     ============================================================ -->
+<section id="projects">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-label reveal">Projects</div>
+    <h2 class="section-title reveal reveal-delay-1">Proof, Not Just<br>Promises</h2>
+    <p class="section-desc reveal reveal-delay-2">Self-directed HR analytics projects built to show how I think with data, not just talk about it.</p>
+    <div class="project-grid">
+      <div class="project-card reveal">
+        <div class="project-icon">📊</div>
+        <div class="project-title">HR Attrition Analytics Dashboard</div>
+        <div class="project-desc">Analyzed 1,470 employee records to find the strongest predictors of attrition — tenure, overtime, role, and pay — and translated each into a specific, ownable HR action.</div>
+        <div class="project-stats">
+          <span class="project-stat">1,470 records</span>
+          <span class="project-stat">4 key drivers</span>
+        </div>
+        <a href="projects/hr-attrition-dashboard.html" target="_blank" rel="noopener" class="project-link">View Project →</a>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-icon">🎯</div>
+        <div class="project-title">Recruitment Analytics Dashboard</div>
+        <div class="project-desc">An interactive executive hiring dashboard tracking candidates end-to-end from application to offer — filterable by department, source, location, and recruiter.</div>
+        <div class="project-stats">
+          <span class="project-stat">Full funnel view</span>
+          <span class="project-stat">Interactive filters</span>
+        </div>
+        <a href="projects/recruitment-analytics-dashboard.html" target="_blank" rel="noopener" class="project-link">View Project →</a>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-icon">💰</div>
+        <div class="project-title">Compensation &amp; Benefits Benchmarking Study</div>
+        <div class="project-desc">Market pay benchmarking for entry-level HR roles across four Indian metros, converted into recommended offer bands for opening, strong, and walk-away offers.</div>
+        <div class="project-stats">
+          <span class="project-stat">4 metros compared</span>
+          <span class="project-stat">Offer bands built</span>
+        </div>
+        <a href="projects/compensation-benchmarking-study.html" target="_blank" rel="noopener" class="project-link">View Project →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      SKILLS
      ============================================================ -->
 <section id="skills">
@@ -1676,10 +1804,10 @@ footer {
           </div>
         </div>
       </div>
-      <!-- Sales -->
+      <!-- Business Dev -->
       <div class="skill-category reveal reveal-delay-2">
         <div class="skill-cat-icon">📈</div>
-        <div class="skill-cat-name">Sales &amp; Business Dev</div>
+        <div class="skill-cat-name">Business Development</div>
         <div class="skill-bars">
           <div class="skill-bar-item">
             <div class="skill-bar-top"><span class="skill-bar-name">Lead Generation</span><span class="skill-bar-pct">80%</span></div>
@@ -1915,7 +2043,7 @@ footer {
   <div class="section-label reveal">Contact</div>
   <h2 class="section-title reveal reveal-delay-1">Let's Build<br>Something Together</h2>
   <p class="contact-tagline reveal reveal-delay-2">
-    Whether you're looking for an HR partner, a marketing strategist, or a sales-driven team member — I'm ready. Let's talk.
+    Whether you're looking for an HR partner or a marketing strategist — I'm ready. Let's talk.
   </p>
   <div class="contact-cards reveal reveal-delay-3">
     <a href="tel:+919944779020" class="contact-card">
@@ -1956,6 +2084,7 @@ footer {
     <div class="footer-links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#leadership">Leadership</a>
       <a href="#education">Education</a>
@@ -1964,7 +2093,7 @@ footer {
     </div>
     <div class="footer-bottom">
       <span style="font-family:var(--font-mono);color:var(--text3);font-size:12px;">
-        Crafted with precision · Aravind M © 2025 · MBA · HR · Marketing · Sales
+        Crafted with precision · Aravind M © 2025 · MBA · HR · Marketing
       </span>
     </div>
   </div>
@@ -2184,7 +2313,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 document.getElementById('downloadCV').addEventListener('click', e => {
   e.preventDefault();
   const content = `ARAVIND M
-MBA Graduate | HR Specialist | Marketing Strategist | Sales Professional
+MBA Graduate | HR Specialist | Marketing Strategist
 
 Phone: +91 9944779020
 Email: aravindmadheshkumar@gmail.com
@@ -2207,12 +2336,12 @@ Hypedin, Delhi — Marketing Intern
 
 Tulip Valves & Controls — Professional Experience
 • B2B client relationship management
-• Sales pipeline support
+• Pipeline support
 
 --- SKILLS ---
 HR: Recruitment Support, Interview Coordination, HR Operations, Employee Engagement
 Marketing: Branding, Campaign Coordination, Digital Marketing, Market Research
-Sales: Lead Generation, CRM, Business Development, Negotiation
+Business Development: Lead Generation, CRM, Negotiation
 Tools: Canva, Google Sheets, Communication, Presentation Skills
 
 --- LEADERSHIP ---
